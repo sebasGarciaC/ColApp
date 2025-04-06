@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>CS-Quote</title>
+  </head>
+  <body>  
+
+    <table>
+     
+      
+      <thead>
+          <tr>
+            <th colspan="100%" class="materiaPrima">MATERIA PRIMA</th>
+          </tr>
+
+          <tr>
+            <th id="reference">Referencia</th>
+            <th id="material">Material</th>
+            <th id="Qty">Cantidad</th>
+            <th id="format">Formato Lamina</th>
+            <th id="widthPiece">Ancho pieza</th>
+            <th id="lenghPiece">Largo Pieza</th>
+            <th id="sheetsQty">Cantidad Laminas</th>
+          </tr>  
+            <tr>
+            <th id="sheetCost">Costo Lamina</th>
+            <th id="mpCost">MP Costo</th>
+            <th id="mpMargen">Margen MP</th>
+            <th id="salePrice">Precio Venta</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>
+            <form>
+              <label for="referencia"> </label>
+              <textarea name="" id="referencia" placeholder="Referencia" required></textarea>
+            </form>
+          </td>    
+          <td> -->
+            <form>
+              <label for="material"> </label>
+              <select name="" id="material">
+                <option value="">Hr 3mm</option>
+                <option value="">Hr 3mm</option>
+                <option value="">Hr 3mm</option>
+                <option value="">Hr 3mm</option>
+                <option value="">Hr 3mm</option>
+              </select>
+              <!-- <textarea name="" id="material" placeholder="Material" required></textarea> -->
+            </form>
+          </td>    
+          <td>
+            <form>
+              <label for="cantidad"> </label>
+              <input type="number">
+              <!-- <textarea name="" id="cantidad" placeholder="Cantidad" required></textarea> -->
+            </form>
+          </td>    
+          <td>
+            <form>
+              <label for="formatoLamina"> </label>
+              <input id="formatoLamina" type="number">
+            </form>
+          </td>    
+          <td>
+            <form>
+              <label for="ancho"> </label>
+              <input id="ancho" type="number">
+            </form>
+          </td>    
+          <td>
+            <form>
+              <label for="largo"> </label>
+              <input id="largo" type="number">
+            </form>
+          </td>    
+          <td>
+            <form>
+              <label for="canitdadLaminas"> </label>
+              <input id="canitdadLaminas" type="number">
+            </form>
+          </td>   
+        </tr> 
+        <tr>
+          <td>
+            <form>
+              <label for="costoLamina"> </label>
+              <input id="costoLamina" type="number">
+            </form>
+          </td>    
+          <td>
+            <form>
+              <label for="costoMp"> </label>
+              <input id="costoMp" type="number">
+            </form>
+          </td>    
+          <td>
+            <form>
+              <label for="margen"> </label>
+              <input type="range" list="tickmarks">
+              <datalist id="tickmarks">
+                <option value="10%" label="10%">10%</option>
+                <option value="11%" label="11%">11%</option>
+                <option value="12%" label="12%">12%</option>
+                <option value="13%" label="13%">13%</option>
+                <option value="14%" label="14%">14%</option>
+                <option value="15%" label="15%">15%</option>
+                <option value="16%" label="16%">16%</option>
+
+              </datalist>
+              
+            </form>
+          </td>    
+          <td>
+            <form>
+              <label for="precioVenta"> </label>
+              <input id="precioVenta" type="text">
+            </form>
+          </td>     
+        </tr>
+
+    
+      </tbody>
+  </table>   
+
+      
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="scrip.js"></script>    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

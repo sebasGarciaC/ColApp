@@ -1,0 +1,78 @@
+.cotizacion{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.inputMp{
+    border: solid 0.5px;
+    margin: 8px;
+    padding: 7px;
+}
+
+.inputProcesos{
+    margin-left: 5px;
+}
+
+.campo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border: solid 0.5px;
+    border-radius: 6px;
+    margin: 10px;
+    
+}
+.card{
+    border: solid 0.5px;
+    margin: 7px auto;
+    padding: 8px;
+}
+.procesoLaser {
+    display: flex;
+    justify-content: space-evenly;
+}
+.procesoDoblez{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.otroProceso1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.otroProceso2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.otroProceso3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label{
+
+    font-size: 13px;
+    font-weight:bold;
+}
+
+
+
+th, td{
+    border: solid 0.5px;
+    text-align: center;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    text-align: auto;
+    font-size: 13px;
+    
+
+}
+input{
+    height: 13px;
+}

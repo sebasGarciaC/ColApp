@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCotizacion.css">
+    <title>cotizacion</title>
+</head>
+<body>
+
+    <form id="formularioCotizacion">
+        <div class="cotizacion"> <!--Cotizacion ------------------->
+            <div class="inputMp"> <!--Materia Prima -->
+                    <div class="campo">
+                        <label for="referencia">Referencia</label>
+                        <textarea name="referencia1" id="referencia" required></textarea>
+                    </div>
+                    <div class="campo">
+                        <label for="tipoMaterial">Tipo de Material</label>
+                        <select required name="material" id="tipoMaterial" class="select" >
+                            <option value="">-</option>
+                            <option value="Hr 2,5mm">Hr 2,5mm</option>
+                            <option value="Hr 3mm">Hr 3mm</option>
+                            <option value="Hr 4,5mm">Hr 4,5mm</option>
+                            <option value="Hr 6mm">Hr 6mm</option>
+                            <option value="Hr 8mm">Hr 8mm</option>
+                            <option value="Hr 9mm">Hr 9mm</option>
+                            <option value="Hr 12mm">Hr 12mm</option>
+                            <option value="Hr 15mm">Hr 15mm</option>
+                            <option value="Hr16mm">Hr 16mm</option>
+                            <option value="Hr 19mm">Hr 19mm</option>
+                            <option value="Hr 25mm">Hr 25mm</option>
+                        </select>
+                    </div> 
+                    <div class="campo">
+                        <label  for="cantidadPiezas1">Cantidad Piezas</label>
+                        <input required min="1" type="number" name="cantidadPiezas" id="cantidadPiezas1" style="width: auto;" >
+                    </div>
+                    <div class="campo">
+                        <label for="formatoLamina1">Formato Lamina</label>
+                        <input required min="1" type="number" name="formatoLamina" id="formatoLamina1"  >                
+                    </div>
+                    <div class="campo">
+                        <label for="anchoPieza1">Ancho Pieza</label>
+                        <input required min="1" type="number" name="anchoPieza" id="anchoPieza1"  >
+                    </div>
+                    <div class="campo">
+                        <label for="largoPieza1">Largo Pieza</label>
+                        <input required min="1" type="number" name="largoPieza" id="largoPieza1">
+                    </div>
+                    <div class="campo">
+                        <label for="cantidadLaminas1">Cantidad Laminas</label> <!--CANTIDAD LAMINAS-->
+                        <div id="cantidadLaminas" name="canitdadLaminas1"></div>
+                        <!-- <div onclick="cantidadLaminas()" class="calcularLaminas">calcular</div> -->
+                    </div>
+                    <div class="campo">
+                        <label for="costoLamina">Costo Lamina</label>
+                        <input required min="1"  type="number" id="costoLamina" name="costoLamina1">       
+                    </div>
+                    <div class="campo">
+                        <label for="costoMp">Costo Materia Prima</label>
+                        <div id="costoMp" name="costoMp1"></div>       
+                    </div>
+                    <div class="campo">
+                        <div class="rangeStyle">
+                            <label for="margenMp1" class="labelRange">Margen MP - %</label>
+                            <span id="rangeValue" class="rangeClass">-</span>                            
+                            <input type="range" name="margenMp" class="inputClass" id="margenMp1" min="15" max="40" step="3"  
+                                   onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"> <!--Range MP-->
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="precioV entaMp">Precio Venta MP</label>
+                        <div id="precioVentaMp" name="precioVentaMp1"></div>
+                    </div>
+                
+            </div>  <!-- Fin Materia prima-->
+
+            <div class="procesos"> <!--Procesos-->
+                <div class="procesoLaser"> <!--Laser----------->
+
+                    <div class="campoProcesos">
+                        <label for="minutosPieza">Minutos por Pieza</label>
+                        <input type="number" name="minutosPieza1" id="minutosPieza" step="0.01"> 
+                    </div>
+                    <div class="campoProcesos">
+                        <div class="rangeStyle2">
+                            <!-- <label for="tiempoAdicional"  class="labelRange">Tiempo Adicional</label> -->
+                            <span id="rangeValue2" class="rangeClass">-</span>
+                            <input type="range" name="tiempoAdicional1" id="tiempoAdicional" min="10" max="90"  
+                            onchange="rangeSlide2(this.value)" onmousemove="rangeSlide2(this.value)"> <!--Range MP-->
+                        </div>
+                    </div>
+                    <div class="campoProcesos">
+                        <label for="totalMinutos">Total Minutos</label>
+                        <div id="totalMinutos" name="totalMinutos1"></div>
+                    </div>
+                    <div class="campoProcesos">
+                        <label for="totalHoras">Total Horas</label>
+                        <div id="totalHoras" name="totalHoras1"></div>
+                    </div>
+                    <div class="campoProcesos">
+                        <label for="valorHora">Precio Hora</label>
+                        <select name="valorHora1" id="valorHora" class="select" >
+                            <option value="">-</option>
+                            <option value="290000">$ 290.000</option>
+                            <option value="310000">$ 310.000</option>
+                            <option value="320000">$ 320.000</option>
+                            <option value="330000">$ 330.000</option>
+                            <option value="345000">$ 345.000</option>
+                            <option value="350000">$ 350.000</option>
+                            <option value="370000">$ 370.000</option>
+                            <option value="395000">$ 395.000</option>
+                            <option value="405000">$ 405.000</option>
+                            <option value="430000">$ 430.000</option>
+                            <option value="480000">$ 480.000</option>
+                        </select>
+                    </div> 
+                    <div class="campoProcesos">
+                        <label for="costoPieza">Costo Unitario</label>
+                        <div id="costoPieza" name="costoPieza1"></div>
+                    </div>
+                    <div class="campoProcesos">
+                        <label for="precioVentaLaser">Precio Venta Laser</label>
+                        <div id="precioVentaLaser" name="precioVentaLaser1"></div>
+                    </div>
+                </div> <!--Fin Laser-->
+
+                
+
+                
+
+               
+            </div>
+        </div> <!-- Fin Cotizacion-->
+
+        
+        <button id="agregar">Agregar</button>
+    </form>
+    
+    
+    <div class="tablasResumen"> <!--Tabla de cotizacion ---------->
+
+       <table  id="tablaResumen"> 
+            <thead>
+                <th>Referencia</th>
+                <th>Tipo de Material</th>
+                <th>Cantidad Piezas</th>
+                <th>Margen MP %</th>
+                <th>Precio Venta</th>
+                <th class="thLaser">Valor Hora Laser</th>
+                <th class="thLaser">Precio Venta Laser</th>
+                <th class="botonEditar">Editar</th>
+                <th class="botonEliminar">Eliminar</th>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    
+                </tr>
+            </tbody>                    
+        </table>
+    </div>
+
+    <button class="cargarCotizacion">CARGAR</button>
+
+    <script src="cotizacion.js"></script>
+</body>
+</html>

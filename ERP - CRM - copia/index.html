@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Cotizador</title>
+</head>
+<body>
+
+
+    <form id="formularios">
+
+        <div class="cotizacion">
+
+            <div class="inputMp">                                                        <!-- inicio tabla para materia prima--------------->
+
+                <div class="campo">
+                    <label for="referencia1">Referencia</label>
+                    <textarea name="referencia" id="referencia1"  ></textarea>
+                </div>
+                <div class="campo">
+                    <label for="tipoMaterial">Material</label>
+                    <select name="material" id="tipoMaterial" class="select" >
+                        <option value="">-</option>
+                        <option value="Hr 2,5mm">Hr 2,5mm</option>
+                        <option value="Hr 3mm">Hr 3mm</option>
+                        <option value="Hr 4,5mm">Hr 4,5mm</option>
+                        <option value="Hr 6mm">Hr 6mm</option>
+                        <option value="Hr 8mm">Hr 8mm</option>
+                        <option value="Hr 9mm">Hr 9mm</option>
+                        <option value="Hr 12mm">Hr 12mm</option>
+                        <option value="Hr 15mm">Hr 15mm</option>
+                        <option value="Hr16mm">Hr 16mm</option>
+                        <option value="Hr 19mm">Hr 19mm</option>
+                        <option value="Hr 25mm">Hr 25mm</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="cantidadPiezas1">Cantidad Piezas</label>
+                    <input type="number" name="cantidadPiezas" id="cantidadPiezas1" >
+                </div>
+                <div class="campo">
+                    <label for="formatoLamina1">Formato Lamina</label>
+                    <input type="number" name="formatoLamina" id="formatoLamina1" >                
+                </div>
+                <div class="campo">
+                    <label for="anchoPieza1">Ancho Pieza</label>
+                    <input type="number" name="anchoPieza" id="anchoPieza1" >
+                </div>
+                <div class="campo">
+                    <label for="largoPieza1">Largo Pieza</label>
+                    <input type="number" name="largoPieza" id="largoPieza1" >
+                </div>
+                <div class="campo">
+                    <label for="cantidadLaminas1">Cantidad Laminas</label> <!--CANTIDAD LAMINAS-->
+                    <div id="cantidadLaminas" name="canitdadLaminas1"></div>
+                </div>
+                <div class="campo">
+                    <label for="margenMp1">Margen MP - %</label>
+                    <input type="range" name="margenMp" id="margenMp1" min="12" max="30"  > <!--Range MP-->
+                </div>
+                <div class="campo">
+                    <label for="precioVentaMp">Precio Venta MP</label>
+                    <div id="precioVentaMp" name="precioVentaMp1"></div>
+                </div>
+               
+            </div>
+            
+
+            <div class="inputProcesos">                                                     <!-- Inicio Tabla de procesos -------------->
+
+                <div>Encabezado Laser</div><!--   Input Laser -->
+                <div class="card procesoLaser" class="card">                    
+
+                    <div class="minLaser">
+                        <label for="minutosLamina1">Minutos x Lámina</label>
+                        <input type="number" name="minutosLamina" id="minutosLamina1">
+                    </div>
+                    <div class="incrementoLaser">
+                        <label for="incrementoLaser">Incremento Tiempo -  %</label>
+                        <input type="range" id="incrementoLaser" name="incrementoLaser" min="10" max="300">
+                    </div>
+                    <div>
+                        <label for="totalMinutos1">Total Minutos</label>
+                        <div id="totalMinutos1" name="totalMinutos"></div>
+                    </div>
+                    <div>
+                        <label for="totalHoras">Total Horas</label>
+                        <div id="totalHoras" name="totalHoras">Aca va el total de Horas</div>
+                    </div>
+                    <div>
+                        <label for="incrementoHora1">Valor Hora</label>
+                        <input type="range" id="incrementoHora1" name="incrementoHora" min="260000" max="900000" step="5000">
+                    </div>
+                    <div>
+                        <label for="precioVentaLaser1">Precio Venta Láser</label>
+                        <div id="precioVentaLaser1" name="precioVentaLaser">aca  va el valor venta Laser</div>
+                    </div>
+    
+                </div><!-- Fin Input Laser-->
+
+                <div>Encabezado Doblez</div> <!-- Input Doblez-->
+                <div class="card procesoDoblez" class="card">
+
+                    <div class="cantDobleces">
+                        <label for="cantidadDobleces1">Cantidad Dobleces</label>
+                        <input type="number" id="cantidadDobleces1" name="cantidadDobleces">
+                    </div>
+                    <div>
+                        <label for="totalDobleces1">Total Dobleces</label>
+                        <div id="totalDobleces1" name="totalDobleces">Cantidad Dobleces</div>
+                    </div>
+                    <div>
+                        <label for="valorDoblez">Valor Doblez Unitario</label>
+                        <input type="number" id="valorDoblez" name="valorDoblez1" >
+                    </div>
+                    <div>
+                        <label for="precioPlegado">Precio Plegado</label>
+                        <div id="precioPlegado" name="precioPlegado1">Precio Plegado</div>
+                    </div>
+                </div><!--Fin input Doblez-->
+
+                <div>Encabezado Otros Procesos</div> <!--input Externo 1 -->
+                <div class="card otroProceso1">
+                    <div class="costoExt1">
+                        <label for="costoExt2">Costo Externo</label>
+                        <input type="number" name="costoExterno" id="costoExt2">
+                    </div>
+                    <div class="descripcionExt1">
+                        <label for="descripcionExt2">Descripcion Proceso</label>
+                        <input type="text" name="descripcionExterna" id="descripcionExt2">
+                    </div>
+                    <div class="proveedorExt1">
+                        <label for="proveedorExt2">Proveedor Sugerido</label>
+                        <input type="text" name="proveedorExterno" id="proveedorExt2">
+                    </div>
+                    <div class="margenExt1">
+                        <label for="margenExt2">Margen</label>
+                        <input type="range" name="margenExterno" id="margenExt2" min="10" max="100">
+                    </div>
+                    <div class="ventaExt1">
+                        <label for="ventaExt2">Precio Venta Externo 1</label>
+                        <div id="ventaExt2" name="ventaExt3">valor venta </div>
+                    </div>
+                </div>
+
+                <div>Encabezado Otros Procesos 2</div> <!--input Externo 2 -->
+                <div class="card otroProceso2" >
+                    <div class="costoExt2">
+                        <label for="costoExt3">Costo Externo</label>
+                        <input type="number" name="costoExterno1" id="costoExt3">
+                    </div>
+                    <div class="descripcionExt3">
+                        <label for="descripcionExt4">Descripcion Proceso</label>
+                        <input type="text" name="descripcionExterna2" id="descripcionExt4">
+                    </div>
+                    <div class="proveedorExt2">
+                        <label for="proveedorExt3">Proveedor Sugerido</label>
+                        <input type="text" name="proveedorExterno1" id="proveedorExt3">
+                    </div>
+                    <div class="margenExt2">
+                        <label for="margenExt3">Margen</label>
+                        <input type="range" name="margenExterno1" id="margenExt3" min="10" max="100">
+                    </div>
+                    <div class="ventaExt2">
+                        <label for="ventaExt3">Precio Venta Externo 1</label>
+                        <div id="ventaExt3" name="ventaExt4">valor venta </div>
+                    </div>
+                </div>
+
+                <div>Encabezado Otros Procesos 3</div> <!--input Externo 3 -->
+                <div class="card otroProceso3" >
+                    <div class="costoExt3">
+                        <label for="costoExt4">Costo Externo</label>
+                        <input type="number" name="costoExterno2" id="costoExt4">
+                    </div>
+                    <div class="descripcionExt4">
+                        <label for="descripcionExt5">Descripcion Proceso</label>
+                        <input type="text" name="descripcionExterna3" id="descripcionExt5">
+                    </div>
+                    <div class="proveedorExt3">
+                        <label for="proveedorExt4">Proveedor Sugerido</label>
+                        <input type="text" name="proveedorExterno2" id="proveedorExt4">
+                    </div>
+                    <div class="margenExt3">
+                        <label for="margenExt4">Margen</label>
+                        <input type="range" name="margenExterno2" id="margenExt4" min="10" max="100">
+                    </div>
+                    <div class="ventaExt3">
+                        <label for="ventaExt4">Precio Venta Externo 1</label>
+                        <div id="ventaExt4" name="ventaExt5">valor venta </div>
+                    </div>
+                </div>
+                
+
+
+
+
+            </div>                           <!-- Fin Procesos ---------------->
+            
+        </div>
+
+        <button>Agregar</button>
+
+    </form>
+
+    <div class="tablasResumen" >                          <!-- ----------- Tabla Resumen-->
+                         
+        <table id="tablaResumen"> 
+            <thead>
+                <th>Referencia</th>
+                <th>Material</th>
+                <th>Cantidad Piezas</th>
+                <th>Margen Mp</th>
+                <th>Venta Mp</th>
+                <th>Minutos Laser</th>
+                <th>Total Minutos</th>
+                <th>Valor Hora</th>
+                <th>Precio Venta Laser</th>
+                <th>Cantidad Dobleces</th>
+                <th>Total Dobleces</th>
+                <th>Precio Doblez</th>
+                <th>Proceso Ext 1</th>
+                <th>Margen</th>
+                <th>Precio Venta</th>
+                <th>Proceso Ext 2</th>
+                <th>Margen</th>
+                <th>Precio Venta</th>
+                <th>Proceso Ext 3</th>
+                <th>Margen</th>
+                <th>Precio Venta</th>
+                
+            </thead>
+            <tbody>
+                <tr>
+                                 
+                </tr>
+            </tbody>
+        </table>
+       
+    </div>
+
+    <input type="text" id="contenido">
+    <div id="contenedor"></div>
+    
+ 
+    <script src="script2.js"></script>
+</body>
+</html>

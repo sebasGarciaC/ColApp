@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cotizacion</title>
+</head>
+<body>
+    <div class="tables">
+
+        <table class="tablaMp">   <!-- tabla de materia prima -->
+            <thead>
+                <tr>
+                    <th>Materia Prima</th>
+                </tr>
+            </thead>
+            <tbody>
+                <form id="mpForm">
+                    <tr>
+                        <td>
+                            <form id="referenciaMp">
+                                <div>
+                                    <label for="referencia">Referencia</label>
+                                    <textarea name="referencia" id="referencia" required></textarea>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <label for="material">Material</label>
+                                <select name="material" id="material" >
+                                    <option value="">Hr 2,5mm - CL 12</option>
+                                    <option value="">Hr 3mm</option>
+                                    <option value="">Hr 4,5mm</option>
+                                    <option value="">Hr 6mm</option>
+                                    <option value="">Hr 8mm</option>
+                                </select>
+                            </div>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <label for="cantidad">Cantidad</label>
+                                <input type="number" id="cantidad" name="cantidad">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <label for="formatoLamina">Formato Lamina</label>
+                                <input type="number" id="formatoLamina" name="formatoLamina">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <label for="ancho">Ancho Pieza</label>
+                                <input type="number" id="ancho" name="ancho">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <label for="largo">Largo Pieza</label>
+                                <input type="number" id="largo" name="largo">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <label for="canitdadLaminas">Cantidad Laminas</label>
+                                <input type="text" id="canitdadLaminas" name="canitdadLaminas">
+                            </div>
+                        </td>
+                    </tr>               
+                    <tr>
+                        <td>
+                            <div>
+                                <label for="mpMargen">Margen MP</label>
+                                <input type="range" id="mpMargen" name="mpMargen">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <label for="precioVentaMp">Precio Venta</label>
+                                <input type="text" id="precioVentaMp" name="precioVentaMp">
+                            </div>
+                        </td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>                        <!--     terminacion tabla materia prima  -->
+
+        <table class="tablaLaser">      <!-- Comienzo Tabla Laser -->
+            <thead>
+                <th colspan="100%" style="background-color: rgb(251, 169, 69);">Corte laser</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <form action=""></form>
+                        <label for="minLamina">Minutos por Lamina</label>
+                        <input type="number" id="minLamina">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="margenLaser">Incremento %</label>
+                        <input type="range" id="margenLaser">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="totalMin">Tiempo total minutos</label>
+                        <input type="text" id="totalMin">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="totalHoras">Total Horas</label>
+                        <input type="text" id="totalHoras">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="valorHora">Valor Hora</label>
+                        <input type="range" id="valorHora" min="290000" max="550000" step="10000">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="preioVentaLaser">Precio Venta</label>
+                        <input type="text" id="precioVentaLaser">
+                    </td>
+                </tr>
+            </tbody>
+        </table>                        <!-- Terminacion Tabla Laser-->
+
+        <table class="tablaDoblez">
+            <thead>
+                <th colspan="100%" style="background-color: rgb(251, 169, 69);">Doblez</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <form action=""></form>
+                        <label for="cantidadDoblez">Cantidad Doblez</label>
+                        <input type="number" id="cantidadDoblez">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="totalDlobez">Total Dobleces</label>
+                        <input type="text" id="totalDlobez">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="valorDoblez">Valor c / Doblez</label>
+                        <input type="number" id="valorDoblez">
+                    </td>                    
+                    <td>
+                        <form action=""></form>
+                        <label for="preioVentaDoblez">Valor Doblez</label>
+                        <input type="text" id="precioVentaDoblez">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="tablaExterno1">
+            <thead>
+                <th colspan="100%" style="background-color: rgb(93, 160, 199);">Proceso Externo 1</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <form action=""></form>
+                        <label for="costoExterno1">Costo</label>
+                        <input type="number" id="costoExterno1">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="descripcionExterno1">Descripcion de proceso</label>
+                        <input type="text" id="descripcionExterno1">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="proveedorExterno1">Proveedor Sugerido</label>
+                        <input type="text" id="proveedorExterno1">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="margenExterno1">Margen %</label>
+                        <input type="range" id="margenExterno1">
+                    </td>                    
+                    <td>
+                        <form action=""></form>
+                        <label for="precioVentaExterno1">Precio Venta</label>
+                        <input type="text" id="precioVentaExterno1">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="tablaExterno2">
+            <thead>
+                <th colspan="100%" style="background-color: rgb(93, 160, 199);">Proceso Externo 2</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <form action=""></form>
+                        <label for="costoExterno2">Costo</label>
+                        <input type="number" id="costoExterno2">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="descripcionExterno2">Descripcion de proceso</label>
+                        <input type="text" id="descripcionExterno2">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="proveedorExterno2">Proveedor Sugerido</label>
+                        <input type="text" id="proveedorExterno2">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="margenExterno2">Margen %</label>
+                        <input type="range" id="margenExterno2">
+                    </td>                    
+                    <td>
+                        <form action=""></form>
+                        <label for="precioVentaExterno2">Precio Venta</label>
+                        <input type="text" id="precioVentaExterno2">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="tablaExterno3">
+            <thead>
+                <th colspan="100%" style="background-color: rgb(93, 160, 199);">Proceso Externo 3</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <form action=""></form>
+                        <label for="costoExterno3">Costo</label>
+                        <input type="number" id="costoExterno3">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="descripcionExterno3">Descripcion de proceso</label>
+                        <input type="text" id="descripcionExterno3">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="proveedorExterno3">Proveedor Sugerido</label>
+                        <input type="text" id="proveedorExterno3">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="margenExterno3">Margen %</label>
+                        <input type="range" id="margenExterno3">
+                    </td>                    
+                    <td>
+                        <form action=""></form>
+                        <label for="precioVentaExterno3">Precio Venta</label>
+                        <input type="text" id="precioVentaExterno3">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="tablaExterno3">
+            <thead>
+                <th colspan="100%" style="background-color: rgb(134, 197, 180);">Punzonado</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <form action=""></form>
+                        <label for="costoExterno3">Costo</label>
+                        <input type="number" id="costoExterno3">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="descripcionExterno3">Descripcion de proceso</label>
+                        <input type="text" id="descripcionExterno3">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="proveedorExterno3">Proveedor Sugerido</label>
+                        <input type="text" id="proveedorExterno3">
+                    </td>
+                    <td>
+                        <form action=""></form>
+                        <label for="margenExterno3">Margen %</label>
+                        <input type="range" id="margenExterno3">
+                    </td>                    
+                    <td>
+                        <form action=""></form>
+                        <label for="precioVentaExterno3">Precio Venta</label>
+                        <input type="text" id="precioVentaExterno3">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+
+    <div>
+        <button>Submit</button>
+    </div>
+
+    <div class="resumenCotizacion">
+
+        <h2>Resumen Cotizacion</h2>
+
+        <table>
+            <thead>
+                <th>Referencia</th>
+                <th>Material</th>
+                <th>Cantidad Piezas</th>
+                <th>Margen</th>
+                <th>Precio Venta MP</th>
+                <th style="background-color: #fab759;">Total Minutos Laser</th> 
+                <th style="background-color: #fab759;">Precio Laser</th>
+                <th style="background-color: #fab759;">Total Dobleces</th>
+                <th style="background-color: #fab759;">Valor Doblez</th>
+                <th style="background-color: rgb(93, 160, 199) ;">Proceso Ext 1</th>
+                <th style="background-color: rgb(93, 160, 199) ;">Proveedor 1</th>
+                <th style="background-color: rgb(93, 160, 199) ;">Precio Venta</th>   
+                <th style="background-color: rgb(93, 160, 199) ;">Proceso Ext 2</th>
+                <th style="background-color: rgb(93, 160, 199) ;">Proveedor2</th>
+                <th style="background-color: rgb(93, 160, 199) ;">Precio Venta</th>
+                <th style="background-color: rgb(93, 160, 199) ;">Proceso Ext 3</th>
+                <th style="background-color: rgb(93, 160, 199) ;">Proveedor 3</th>
+                <th style="background-color: rgb(93, 160, 199) ;">Precio Venta</th>                     
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td class="referenciaResumen" >
+                        <div>Lorem ipsum dolor, sit amet consectetur adipisicing e</div>
+                    </td>
+                    <td class="materialResumen">
+                        <div>Lorem ipsum dolor</div>
+                    </td>
+                    <td class="cantidadResumen">
+                        <div>200</div>
+                    </td>
+                    <td class="margenResumen">
+                        <div>15%</div>
+                    </td>
+                    <td class="precioVentaMpResumen">
+                        <div>1</div>
+                    </td>
+                    <td class="minutosLaserResumen">
+                        <div>1</div>
+                    </td>
+                    <td class="PrecioLaserResumen">
+                        <div>$1.000</div>
+                    </td>
+                    <td class="doblecesResumen">
+                        <div>500</div>
+                    </td>
+                    <td class="precioDoblezResumen">
+                        <div>$2000</div>
+                    </td>
+                    <td class="externo1Resumen">
+                        <div>mecanizado</div>
+                    </td>
+                    <td class="proveedor1Resumen">
+                        <div>jajimo</div>
+                    </td>
+                    <td class="precioVentaExterno1Resumen">
+                        <div>1000</div>
+                    </td>           
+                    <td class="externo2Resumen">
+                        <div>Corte Plasma</div>
+                    </td>
+                    <td class="proveedor2Resumen">
+                        <div>Ferraceros</div>
+                    </td>
+                    <td class="precioVentaExterno2Resumen">
+                        <div>3000</div>
+                    </td>
+                    <td class="externo3Resumen">
+                        <div>Repujado</div>
+                    </td>
+                    <td class="proveedor3Resumen">
+                        <div>Formas y Doblez</div>
+                    </td>
+                    <td class="precioVentaExterno3Resumen">
+                        <div>4000</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>

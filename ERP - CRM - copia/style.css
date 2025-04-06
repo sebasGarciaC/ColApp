@@ -1,0 +1,194 @@
+/* table{
+    max-width:  100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+table,th,td{
+    border:2px  solid rgb(120, 120, 120);   
+}
+
+th{
+    background-color: rgb(255, 198, 66);
+}
+
+th,td{
+
+    padding: 5px;
+    text-align: center;  
+}
+
+.materiaPrima{
+    background:linear-gradient(rgb(255, 187, 0) ,rgb(243, 227, 170));
+}
+
+textarea{
+    width: 95%;
+    height: 20px;
+    max-height: 70px;
+    font-size: 13px;
+    padding: 4px;
+    border-radius: 5px;
+    border-width: 4px;
+    border-color: #8694a0;
+    outline:none;
+    resize: none;
+    
+
+}
+
+textarea:is(:focus,:valid){
+    border-color: #fab759;
+    border-width: 4px;
+}
+
+textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
+#material{
+    width: 150px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+
+.tables{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    width: 100%
+    
+
+}
+
+.resumenCotizacion{
+    margin: auto;
+    width: 100%;
+}
+
+.tablaMp{
+    grid-row: 1/7;
+    margin-right: 10px;
+} */
+
+.cotizacionInicial{
+    display:grid;
+    grid-template-columns: 25% 75%;
+    width: 99%;
+    margin: 0 auto;
+    gap: 10px;
+
+}
+ 
+
+
+.formularioMp{
+    background-color: rgb(200, 236, 236);
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 8px;
+}
+    
+.procesoLaser{
+    display: flex;
+    background-color: #f5dfc1;
+    border: solid 1px;
+    height: auto;
+    padding: 7px;
+}
+
+.procesoDoblez{
+    display: flex;
+    background-color: #deefcf;
+    border: solid 1px;
+    height: auto;
+    padding: 7px;
+}
+
+.procesoOtros{
+    display: flex;
+    background-color: #cdf3eb;
+    border: solid 1px;
+    height: auto;
+    padding: 7px;
+
+}
+
+button{
+    background-color: #fab759;
+    margin-left:45%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.botonProcesos{
+    margin: 10px auto;
+}
+
+    
+.tablaMp{
+    display: grid;
+    gap: 5px;
+}
+
+.select{
+    background: #f8ead6;
+    width: 55%;
+    height: 25px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 0.5px;
+    width: 95%;
+    margin: 4px auto;
+    padding: 3px;
+
+}
+
+
+.minLaser{
+    border-right: solid 0.5px;
+}
+
+
+/*  TEXT AREA*/
+textarea{
+    width: 60%;
+    height: 20px;
+    max-height: 70px;
+    font-size: 13px;
+    padding: 4px;
+    border-radius: 5px;
+    border-width: 4px;
+    border-color: #8694a0;
+    outline:none;
+    resize: none;
+    
+
+}
+
+textarea:is(:focus,:valid){
+    border-color: #fab759;
+    border-width: 4px;
+}
+
+textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+/*  -------tabla Resumen--------*/
+
+c
+
+.tablasResumen{
+    display: flex;
+}

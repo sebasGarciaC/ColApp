@@ -1,0 +1,47 @@
+table{
+    width: 99%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.headMp{
+    width: 97%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px;    
+    border: solid 1px;
+    border-radius: 7px;
+    font-size: 20px;
+
+}
+
+
+table,th,td{
+    border:2px  solid rgb(120, 120, 120);   
+}
+
+th{
+    background-color: rgb(206, 203, 201);
+}
+
+.materiaprima{
+    background: rgb(205, 201, 196);
+}
+
+th,td{
+
+    padding: 5px;
+    text-align: center;
+   
+}
+
+.boton{
+    position: absolute;
+    margin: 20px;
+}
+
